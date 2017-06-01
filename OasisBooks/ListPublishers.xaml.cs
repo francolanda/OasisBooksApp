@@ -11,15 +11,18 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace OasisBooks
 {
     /// <summary>
-    /// Interaction logic for ListBooks.xaml
+    /// Interaction logic for ListPublishers.xaml
     /// </summary>
-    public partial class ListBooks : Window
+    public partial class ListPublishers : Window
     {
-        public ListBooks()
+        public ListPublishers()
         {
             InitializeComponent();
         }
@@ -28,11 +31,12 @@ namespace OasisBooks
         {
             OasisDataSet dataset = new OasisDataSet();
 
-            OasisDataSetTableAdapters.booksTableAdapter adapter = new OasisDataSetTableAdapters.booksTableAdapter();
+            OasisDataSetTableAdapters.publishersTableAdapter adapter = new OasisDataSetTableAdapters.publishersTableAdapter();
 
-            adapter.Fill(dataset.books);
+            adapter.Fill(dataset.publishers);
 
-            dataGrid.ItemsSource = dataset.books.DefaultView;
+            dataGrid.ItemsSource = dataset.publishers.DefaultView;
+
         }
     }
 }

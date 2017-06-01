@@ -23,5 +23,24 @@ namespace OasisBooks
         {
             InitializeComponent();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            int retval = 0;
+
+            Datamgmt datamgmt = new Datamgmt();
+
+            string[] strinput = new string[3];
+            int nbrinput = 0;
+            string datatype = "publishers";
+
+            strinput[0] = txtPubID.Text;
+            strinput[1] = txtPubName.Text;
+            strinput[2] = txtPubCity.Text;
+
+            nbrinput = 3;
+
+            retval = datamgmt.showData(strinput, nbrinput, datatype);
+        }
     }
 }

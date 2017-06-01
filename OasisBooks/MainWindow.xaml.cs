@@ -50,10 +50,40 @@ namespace OasisBooks
             addpromotion.Show();
         }
 
-        private void button5_Click(object sender, RoutedEventArgs e)
+        private void btn_listPubs_Click(object sender, RoutedEventArgs e)
         {
-            AddSale addsale = new AddSale();
-            addsale.Show();
+            ListPublishers listpubs = new ListPublishers();
+            listpubs.Show();
+        }
+
+        private void btn_listBooks_Click(object sender, RoutedEventArgs e)
+        {
+            ListBooks listbooks = new ListBooks();
+            listbooks.Show();
+        }
+
+        private void btn_listOrders_Click(object sender, RoutedEventArgs e)
+        {
+            ListOrders listorders = new ListOrders();
+            listorders.Show();
+        }
+
+        private void btn_listEmployees_Click(object sender, RoutedEventArgs e)
+        {
+            ListEmployees listemployees = new ListEmployees();
+            listemployees.Show();
+        }
+
+        private void btn_listPromos_Click(object sender, RoutedEventArgs e)
+        {
+            ListPromotions listpromotions = new ListPromotions();
+            listpromotions.Show();
+        }
+
+        private void button6_Click(object sender, RoutedEventArgs e)
+        {
+            AddPublisher addpublisher = new AddPublisher();
+            addpublisher.Show();
         }
     }
 }

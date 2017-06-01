@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,18 +31,22 @@ namespace OasisBooks
 
             Datamgmt datamgmt = new Datamgmt();
 
-            string[] strinput = new string[5];
+            string[] strinput = new string[6];
             int nbrinput = 0;
+            string datatype = "books";
 
             strinput[0] = txtISBN.Text;
             strinput[1] = txtTitle.Text;
             strinput[2] = txtAuthor.Text;
             strinput[3] = txtGenre.Text;
             strinput[4] = txtPublisher.Text;
+            strinput[5] = txtPrice.Text;
 
             nbrinput = 5;
 
-            retval = datamgmt.showData(strinput, nbrinput);
+            retval = datamgmt.showData(strinput, nbrinput, datatype);
+
+            
         }
     }
 }

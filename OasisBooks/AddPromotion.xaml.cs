@@ -32,6 +32,7 @@ namespace OasisBooks
 
             string[] strinput = new string[5];
             int nbrinput = 0;
+            string datatype = "promotions";
 
             strinput[0] = txtPromoID.Text;
             strinput[1] = txtPromoTitle.Text;
@@ -41,7 +42,7 @@ namespace OasisBooks
 
             nbrinput = 5;
 
-            retval = datamgmt.showData(strinput, nbrinput);
+            retval = datamgmt.showData(strinput, nbrinput, datatype);
         }
     }
 }

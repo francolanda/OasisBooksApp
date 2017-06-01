@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace OasisBooks
 {
     /// <summary>
-    /// Interaction logic for ListBooks.xaml
+    /// Interaction logic for ListPromotions.xaml
     /// </summary>
-    public partial class ListBooks : Window
+    public partial class ListPromotions : Window
     {
-        public ListBooks()
+        public ListPromotions()
         {
             InitializeComponent();
         }
@@ -28,11 +28,11 @@ namespace OasisBooks
         {
             OasisDataSet dataset = new OasisDataSet();
 
-            OasisDataSetTableAdapters.booksTableAdapter adapter = new OasisDataSetTableAdapters.booksTableAdapter();
+            OasisDataSetTableAdapters.promotionsTableAdapter adapter = new OasisDataSetTableAdapters.promotionsTableAdapter();
 
-            adapter.Fill(dataset.books);
+            adapter.Fill(dataset.promotions);
 
-            dataGrid.ItemsSource = dataset.books.DefaultView;
+            dataGrid.ItemsSource = dataset.promotions.DefaultView;
         }
     }
 }

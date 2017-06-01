@@ -5,14 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OasisBooks"
         mc:Ignorable="d"
-        Title="Oasis Books" Height="350" Width="525">
+        Title="Oasis Books" Height="279" Width="453">
     <Grid>
         <Label Content="Oasis Books Data Management" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Calibri" FontSize="18"/>
-        <Button x:Name="button1" Content="New Employee" HorizontalAlignment="Left" Margin="114,166,0,0" VerticalAlignment="Top" Width="90" FontFamily="Calibri" Click="button1_Click"/>
-        <Button x:Name="button2" Content="New Book" HorizontalAlignment="Left" Margin="114,80,0,0" VerticalAlignment="Top" Width="90" FontFamily="Calibri" Click="button2_Click"/>
-        <Button x:Name="button3" Content="New Order" HorizontalAlignment="Left" Margin="232,80,0,0" VerticalAlignment="Top" Width="90" FontFamily="Calibri" Click="button3_Click"/>
-        <Button x:Name="button4" Content="New Promotion" HorizontalAlignment="Left" Margin="232,125,0,0" VerticalAlignment="Top" Width="90" FontFamily="Calibri" Click="button4_Click"/>
-        <Button x:Name="button5" Content="New Sale" HorizontalAlignment="Left" Margin="114,125,0,0" VerticalAlignment="Top" Width="90" FontFamily="Calibri" Click="button5_Click"/>
+        <Button x:Name="button1" Content="New Employee" HorizontalAlignment="Left" Margin="37,92,0,0" VerticalAlignment="Top" Width="90" Click="button1_Click" FontSize="11"/>
+        <Button x:Name="button2" Content="New Book" HorizontalAlignment="Left" Margin="37,61,0,0" VerticalAlignment="Top" Width="90" Click="button2_Click" FontSize="11"/>
+        <Button x:Name="button3" Content="New Order" HorizontalAlignment="Left" Margin="37,123,0,0" VerticalAlignment="Top" Width="90" Click="button3_Click" FontSize="11"/>
+        <Button x:Name="button4" Content="New Promotion" HorizontalAlignment="Left" Margin="37,153,0,0" VerticalAlignment="Top" Width="90" Click="button4_Click" FontSize="11"/>
+        <Button x:Name="btn_listPubs" Content="List Publishers" HorizontalAlignment="Left" Margin="167,182,0,0" VerticalAlignment="Top" Width="90" Height="19" Click="btn_listPubs_Click" FontSize="11"/>
+        <Button x:Name="btn_listBooks" Content="List Books" HorizontalAlignment="Left" Margin="167,61,0,0" VerticalAlignment="Top" Width="90" Click="btn_listBooks_Click" Height="19" FontSize="11"/>
+        <Button x:Name="btn_listOrders" Content="List Orders" HorizontalAlignment="Left" Margin="167,123,0,0" VerticalAlignment="Top" Width="90" Click="btn_listOrders_Click" Height="19" FontSize="11"/>
+        <Button x:Name="btn_listEmployees" Content="List Employees" HorizontalAlignment="Left" Margin="167,92,0,0" VerticalAlignment="Top" Width="90" Click="btn_listEmployees_Click" Height="19" FontSize="11"/>
+        <Button x:Name="btn_listPromos" Content="List Promotions" HorizontalAlignment="Left" Margin="167,153,0,0" VerticalAlignment="Top" Width="90" Click="btn_listPromos_Click" Height="19" FontSize="11"/>
+        <Button x:Name="button6" Content="New Publisher" HorizontalAlignment="Left" Margin="37,182,0,0" VerticalAlignment="Top" Width="90" Height="19" Click="button6_Click" FontSize="11"/>
 
     </Grid>
 </Window>
